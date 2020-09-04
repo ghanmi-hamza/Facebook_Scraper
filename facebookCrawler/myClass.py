@@ -74,8 +74,7 @@ class FacebookDriver(Driver):
         dic={
         'name':self.name,
         'Intro':intro,
-        'friends':self.friends,
-        'image':self.image,
+        'friends':self.friends
         }
         return(dic)
     def get_publications(self,user_id,comments,n):
