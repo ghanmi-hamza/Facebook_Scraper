@@ -10,11 +10,14 @@ import urllib.request
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-#mettre le path de votre chromedriver
-chrome_path = r"C:\Users\Hamza\Downloads\chromedriver_win32 (1)\chromedriver.exe"
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.options import Options
+
 
 def get_browser(url,usr,pwd):
-    driver = webdriver.Chrome(chrome_path)
+    options = webdriver.firefox.options.Options()
+    #options.headless = True
+    driver = webdriver.Firefox(executable_path=r"C:\Users\Hamza\Downloads\geckodriver.exe",options=options)
     driver.get(url)
     email = driver.find_element_by_xpath("//input[@id='email' or @name='email']")
     email.send_keys(usr)
@@ -37,22 +40,20 @@ def post_details(data,driver):
         popup = WebDriverWait(driver, 10). until(EC.presence_of_element_located((By.CSS_SELECTOR, 'html')))
         driver.execute_script('arguments[0].scrollTop = arguments[0].scrollHeight', popup)
     try:
-        nb_reaction=data.find_element_by_xpath(".//div[contains(@class, '_66lg')]").text
+        nb_reaction=data.find_element_by_xpath(".//span[@class='gpro0wi8 cwj9ozl2 bzsjyuwj ja2t1vim']").text
     except Exception:
         nb_reaction=0
-
     try:
-        nb_comment=data.find_element_by_xpath(".//a[contains(@class, '_3hg- _42ft')]").text
+        nb_comment=data.find_element_by_xpath(".//span[@class='oi732d6d ik7dh3pa d2edcug0 hpfvmrgz qv66sw1b c1et5uql a8c37x1j muag1w35 enqfppq2 jq4qci2q a3bd9o3v knj5qynh m9osqain']").text
     except Exception:
         nb_comment=0
-    q=data.find_element_by_xpath(".//div[contains(@class, '_5pcr')]")
-    user=q.find_element_by_xpath(".//*[contains(@class, '_7tae _14f3 _14f5 _5pbw _5vra')]").text
-    date=q.find_element_by_xpath(".//abbr[contains(@class,'_5ptz')]").get_attribute('title')
-    contenu=q.find_element_by_xpath(".//*[contains(@class, 'userContent')]").text
+    q=data
+    user=q.find_element_by_xpath(".//a[@class='oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl oo9gr5id gpro0wi8 lrazzd5p']").text
+    date=q.find_element_by_xpath(".//a[@class='oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl gmql0nx0 gpro0wi8 b1v8xokw']").get_attribute("aria-label")
+    contenu=q.find_element_by_xpath(".//div[@class='ecm0bbzt hv4rvrfc ihqw7lf3 dati1w0a']").text
     try:
-        im=q.find_element_by_xpath(".//a[contains(@class, '_5dec') or contains(@class, '_4-eo')]")
-        img = im.find_element_by_tag_name('img')
-        image=img.get_attribute('src')
+        img=q.find_element_by_xpath(".//a[@class='oajrlxb2 gs1a9yip g5ia77u1 mtkw9kbi tlpljxtp qensuy8j ppp5ayq2 goun2846 ccm00jje s44p3ltw mk2mc5f4 rt8b4zig n8ej3o3l agehan2d sk4xxmp2 rq0escxv nhd2j8a9 a8c37x1j mg4g778l btwxx1t3 pfnyh3mw p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x tgvbjcpo hpfvmrgz jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso l9j0dhe7 i1ao9s8h esuyzwwr f1sip0of du4w35lb lzcic4wl abiwlrkh p8dawk7l tm8avpzi']")
+        image=img.get_attribute('href')
     except Exception:
         image='No image'
     dic={
@@ -143,6 +144,7 @@ def get_images(driver,url,n):
     """return the n first images urls"""
     url_list=[]
     driver.get(url+"/photos_all")
+    time.sleep(2)
     for i in range(n):
         sc = WebDriverWait(driver, 10). until(EC.presence_of_element_located((By.CSS_SELECTOR, 'html')))
         driver.execute_script('arguments[0].scrollTop = arguments[0].scrollHeight', sc)

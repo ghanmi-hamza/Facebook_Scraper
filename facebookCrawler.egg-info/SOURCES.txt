@@ -1,0 +1,11 @@
+README.md
+setup.py
+facebookCrawler/__init__.py
+facebookCrawler/__main__.py
+facebookCrawler/functions.py
+facebookCrawler/myClass.py
+facebookCrawler.egg-info/PKG-INFO
+facebookCrawler.egg-info/SOURCES.txt
+facebookCrawler.egg-info/dependency_links.txt
+facebookCrawler.egg-info/requires.txt
+facebookCrawler.egg-info/top_level.txt
