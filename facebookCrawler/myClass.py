@@ -46,13 +46,11 @@ class FacebookDriver(Driver):
         
     def get_user_info(self,user_id):
         self.driver.get("https://www.facebook.com/"+str(user_id))
-        time.sleep(3)
+        time.sleep(5)
         try:
             intro=self.driver.find_element_by_xpath(".//div[@class= 'rq0escxv l9j0dhe7 du4w35lb j83agx80 cbu4d94t g5gj957u d2edcug0 hpfvmrgz rj1gh0hx buofh1pr p8fzw8mz pcp91wgn iuny7tx3 ipjc6fyt']").text
         except:
-            intro=''
-        time.sleep(3)
-
+            intro=""
         try:
             self.friends=self.driver.find_element_by_xpath("//*[@id='mount_0_0']/div/div[1]/div[1]/div[3]/div/div/div[1]/div[1]/div/div/div[3]/div/div/div/div[1]/div/div/div[1]/div/div/div/div[1]/a[3]/div[1]/span/span[2]").text
         except Exception:
@@ -74,31 +72,24 @@ class FacebookDriver(Driver):
         """ function that return info about the first n posts """
         self.driver.get("https://www.facebook.com/"+str(user_id))
         post={}
-        time.sleep(4)
-        try:
-            self.driver.execute_script("arguments[0].scrollIntoView();",self.driver.find_elements_by_xpath(".//div[@class='du4w35lb k4urcfbm l9j0dhe7 sjgh65i0']")[0])
-        except:
-            pass
-        self.posts={}
+        time.sleep(5)
+        posts={}
         for i in range(n):
             try:
-                c=self.driver.find_elements_by_xpath(".//div[@class='rq0escxv l9j0dhe7 du4w35lb hybvsw6c ue3kfks5 pw54ja7n uo3d90p7 l82x9zwi ni8dbmo4 stjgntxs k4urcfbm sbcfpzgs']")
-                #c=self.driver.find_elements_by_xpath(".//div[@class='du4w35lb k4urcfbm l9j0dhe7 sjgh65i0']")
+                c=self.driver.find_elements_by_xpath(".//div[@class='du4w35lb k4urcfbm l9j0dhe7 sjgh65i0']")          
+                self.driver.execute_script("arguments[0].scrollIntoView();",c[i])          
+                time.sleep(2)
                 a=self.post_details(c[i])
                 if comments=="T":
                     b=self.get_comments(c[i])
+                    a['comments']=b
                 else:
                     b=''
-                #a['commentaire']=b
-                dic={
-                'post'+str(i+1):a,
-                'comments':b
-                }
-                self.posts.update(dic)
-                print(i+1)
+                dic={'post'+str(i+1):a}
+                posts.update(dic)
             except:
-                break
-        return(self.posts)
+                pass
+        return(posts)
     
 
     def get_images(self,user_id,n):
@@ -133,11 +124,6 @@ class FacebookDriver(Driver):
         return(BirthDay,Gender)
     def post_details(self,publication_id):
         """get details from a post"""
-        try:
-            self.driver.execute_script("arguments[0].scrollIntoView();",publication_id)
-            
-        except:
-            pass
         time.sleep(1)
         """try:
             bouton = self.driver.find_element_by_xpath(".//*[@class='see_more_link']")
@@ -150,7 +136,7 @@ class FacebookDriver(Driver):
         except Exception:
             nb_reaction=0
         try:
-            nb_comment=publication_id.find_element_by_xpath(".//span[@class='oi732d6d ik7dh3pa d2edcug0 hpfvmrgz qv66sw1b c1et5uql a8c37x1j muag1w35 enqfppq2 jq4qci2q a3bd9o3v knj5qynh m9osqain']").text
+            nb_comment=publication_id.find_element_by_xpath(".//div[@class='bp9cbjyn j83agx80 pfnyh3mw p1ueia1e']").text
         except:
             nb_comment=0
         user=publication_id.find_element_by_xpath(".//a[@class='oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl oo9gr5id gpro0wi8 lrazzd5p']").text
@@ -158,7 +144,7 @@ class FacebookDriver(Driver):
         try:
             contenu=publication_id.find_element_by_xpath(".//div[@class='ecm0bbzt hv4rvrfc ihqw7lf3 dati1w0a']").text
         except:
-            contenu=publication_id.find_element_by_xpath(".//div[@id='jsc_c_2k']").text
+            contenu=''
         try:
             img=publication_id.find_element_by_xpath(".//img[@class='i09qtzwb n7fi1qx3 datstx6m pmk7jnqg j9ispegn kr520xx4 k4urcfbm bixrwtb6']")
             image=img.get_attribute('src')
@@ -186,15 +172,11 @@ class FacebookDriver(Driver):
                     pass
         except Exception:
             pass
-        data = post_id.find_elements_by_xpath(".//div[@class='l9j0dhe7 ecm0bbzt hv4rvrfc qt6c0cv9 dati1w0a lzcic4wl btwxx1t3 j83agx80']")
-        print(len(data))
         time.sleep(1)
+        data = post_id.find_elements_by_xpath(".//div[@class='l9j0dhe7 ecm0bbzt hv4rvrfc qt6c0cv9 dati1w0a lzcic4wl btwxx1t3 j83agx80']")
         for d in data:
-            try:
-                author = d.find_element_by_xpath(".//div[@class='nc684nl6']").text
-                print(author)
-            except:
-                author=''
+            
+            author = d.find_element_by_xpath(".//span[@class='pq6dq46d']").text
             try:
                 text = d.find_element_by_xpath(".//div[@class='ecm0bbzt e5nlhep0 a8c37x1j']").text
             except:

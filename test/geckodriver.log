@@ -108,3 +108,342 @@ console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Err
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1599641953805	geckodriver	INFO	Listening on 127.0.0.1:58165
+1599641956832	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hamza\\AppData\\Local\\Temp\\rust_mozprofileQds6Ov"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599641967608	Marionette	INFO	Listening on port 58173
+1599641968275	Marionette	WARN	TLS certificate errors will be ignored for this session
+1599643942455	Marionette	INFO	Stopped listening on port 58173
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1599643950930	geckodriver	INFO	Listening on 127.0.0.1:59263
+1599643954075	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hamza\\AppData\\Local\\Temp\\rust_mozprofileV6Bb5v"
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599643963575	Marionette	INFO	Listening on port 59272
+1599643964226	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i4Jo4/ye/l/fr_FR/phdcGQgna9Y.js?_nc_x=Ij3Wp8lg5Kz, line 19: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i4Jo4/ye/l/fr_FR/phdcGQgna9Y.js?_nc_x=Ij3Wp8lg5Kz, line 19: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i4Jo4/ye/l/fr_FR/phdcGQgna9Y.js?_nc_x=Ij3Wp8lg5Kz, line 19: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i4Jo4/ye/l/fr_FR/phdcGQgna9Y.js?_nc_x=Ij3Wp8lg5Kz, line 19: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i9nl4/y_/l/en_US/A0_OYV9tltw.js?_nc_x=y7PXV7bUWY1, line 27: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i9nl4/y_/l/en_US/A0_OYV9tltw.js?_nc_x=y7PXV7bUWY1, line 27: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i9nl4/y_/l/en_US/A0_OYV9tltw.js?_nc_x=y7PXV7bUWY1, line 27: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i9nl4/y_/l/en_US/A0_OYV9tltw.js?_nc_x=y7PXV7bUWY1, line 27: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39013A,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 9632, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1599644433999	Marionette	INFO	Stopped listening on port 59272
+1599644995454	geckodriver	INFO	Listening on 127.0.0.1:59896
+1599644998582	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hamza\\AppData\\Local\\Temp\\rust_mozprofileYyGEIo"
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599645005020	Marionette	INFO	Listening on port 59908
+1599645005537	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i4Jo4/yL/l/fr_FR/6pFF5V22JRQ.js?_nc_x=Ij3Wp8lg5Kz, line 19: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i4Jo4/yL/l/fr_FR/6pFF5V22JRQ.js?_nc_x=Ij3Wp8lg5Kz, line 19: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i4Jo4/yL/l/fr_FR/6pFF5V22JRQ.js?_nc_x=Ij3Wp8lg5Kz, line 19: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i4Jo4/yL/l/fr_FR/6pFF5V22JRQ.js?_nc_x=Ij3Wp8lg5Kz, line 19: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iUwi4/y5/l/en_US/nA48yNWKMPti_MjLfDRwiwY81bVfj1z8jaQCptPei6qeFWcYx9lUcEW.js?_nc_x=y7PXV7bUWY1, line 188: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iUwi4/y5/l/en_US/nA48yNWKMPti_MjLfDRwiwY81bVfj1z8jaQCptPei6qeFWcYx9lUcEW.js?_nc_x=y7PXV7bUWY1, line 188: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iUwi4/y5/l/en_US/nA48yNWKMPti_MjLfDRwiwY81bVfj1z8jaQCptPei6qeFWcYx9lUcEW.js?_nc_x=y7PXV7bUWY1, line 188: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iUwi4/y5/l/en_US/nA48yNWKMPti_MjLfDRwiwY81bVfj1z8jaQCptPei6qeFWcYx9lUcEW.js?_nc_x=y7PXV7bUWY1, line 188: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iUwi4/ym/l/en_US/nA48yNWKMPti_MjLfDRwiwY81bVfj1z8jaQCptPei6qe.js?_nc_x=y7PXV7bUWY1, line 188: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iUwi4/ym/l/en_US/nA48yNWKMPti_MjLfDRwiwY81bVfj1z8jaQCptPei6qe.js?_nc_x=y7PXV7bUWY1, line 188: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iUwi4/ym/l/en_US/nA48yNWKMPti_MjLfDRwiwY81bVfj1z8jaQCptPei6qe.js?_nc_x=y7PXV7bUWY1, line 188: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iUwi4/ym/l/en_US/nA48yNWKMPti_MjLfDRwiwY81bVfj1z8jaQCptPei6qe.js?_nc_x=y7PXV7bUWY1, line 188: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iig54/y8/l/en_US/i_MjLfDRwiwY81bVfj1z8jaQCptPei6qeFWcYx9lUcEWyM8g_3198_S8mFDxSaNroCsmgshYgdhjRTi7N_GizkH0g1DYAwRAyTfdo7wk7o24AGl8k7y1c4OMbgzNAVZXKZcmFSZ0dIK8hMaZugzNPv8N1-tecPer4zYHp8Fcd7zA50oNd_wZtmlw3DwBcdX2ThrYJWzs-QcapTHbcIYknI3fd4qM4m24Hx72KEdVn3u4DKx-_6f6eUw19Db3-1QDy_Sf_WFpI3PYL2iHRTY3shmdRr8sl6eLNxY94NrfoH0bwItCrKB88cY1b1jAFWMVsvpR2jgf2U.js?_nc_x=y7PXV7bUWY1, line 113: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iig54/y8/l/en_US/i_MjLfDRwiwY81bVfj1z8jaQCptPei6qeFWcYx9lUcEWyM8g_3198_S8mFDxSaNroCsmgshYgdhjRTi7N_GizkH0g1DYAwRAyTfdo7wk7o24AGl8k7y1c4OMbgzNAVZXKZcmFSZ0dIK8hMaZugzNPv8N1-tecPer4zYHp8Fcd7zA50oNd_wZtmlw3DwBcdX2ThrYJWzs-QcapTHbcIYknI3fd4qM4m24Hx72KEdVn3u4DKx-_6f6eUw19Db3-1QDy_Sf_WFpI3PYL2iHRTY3shmdRr8sl6eLNxY94NrfoH0bwItCrKB88cY1b1jAFWMVsvpR2jgf2U.js?_nc_x=y7PXV7bUWY1, line 113: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iig54/y8/l/en_US/i_MjLfDRwiwY81bVfj1z8jaQCptPei6qeFWcYx9lUcEWyM8g_3198_S8mFDxSaNroCsmgshYgdhjRTi7N_GizkH0g1DYAwRAyTfdo7wk7o24AGl8k7y1c4OMbgzNAVZXKZcmFSZ0dIK8hMaZugzNPv8N1-tecPer4zYHp8Fcd7zA50oNd_wZtmlw3DwBcdX2ThrYJWzs-QcapTHbcIYknI3fd4qM4m24Hx72KEdVn3u4DKx-_6f6eUw19Db3-1QDy_Sf_WFpI3PYL2iHRTY3shmdRr8sl6eLNxY94NrfoH0bwItCrKB88cY1b1jAFWMVsvpR2jgf2U.js?_nc_x=y7PXV7bUWY1, line 113: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iig54/y8/l/en_US/i_MjLfDRwiwY81bVfj1z8jaQCptPei6qeFWcYx9lUcEWyM8g_3198_S8mFDxSaNroCsmgshYgdhjRTi7N_GizkH0g1DYAwRAyTfdo7wk7o24AGl8k7y1c4OMbgzNAVZXKZcmFSZ0dIK8hMaZugzNPv8N1-tecPer4zYHp8Fcd7zA50oNd_wZtmlw3DwBcdX2ThrYJWzs-QcapTHbcIYknI3fd4qM4m24Hx72KEdVn3u4DKx-_6f6eUw19Db3-1QDy_Sf_WFpI3PYL2iHRTY3shmdRr8sl6eLNxY94NrfoH0bwItCrKB88cY1b1jAFWMVsvpR2jgf2U.js?_nc_x=y7PXV7bUWY1, line 113: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iKAV4/y-/l/en_US/Y81bVfj1z8jaQCptPei6qeFWcYx9lUcEWyM8g_3198_S8mFDxSaNroCsmgshYgdhjRg1DYAwRAyTfdo7wk7o24AGl8k7y1c4OMbgzNAVZXKZcmFSZ0dIK8hMaZugzNPv8N1-iAzzfpvdHg9Mczon6kD96mXd3eYQQ20V68Fcd7zA50oNd_wZtmlw3DwBcdX2ThrYJWzs-QcapTHbcIYknI3fd4qM4m24Hx72KEdmIv40KV6rNKVn3u4DKx-_6f6eUw19Db3-1QDy_Sf_WFpI3PYL2iHRTY3shmdRr8sl6eLNxY94NrfoH0bwItCrKB8VsvpR2jgf2U.js?_nc_x=y7PXV7bUWY1, line 27: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iKAV4/y-/l/en_US/Y81bVfj1z8jaQCptPei6qeFWcYx9lUcEWyM8g_3198_S8mFDxSaNroCsmgshYgdhjRg1DYAwRAyTfdo7wk7o24AGl8k7y1c4OMbgzNAVZXKZcmFSZ0dIK8hMaZugzNPv8N1-iAzzfpvdHg9Mczon6kD96mXd3eYQQ20V68Fcd7zA50oNd_wZtmlw3DwBcdX2ThrYJWzs-QcapTHbcIYknI3fd4qM4m24Hx72KEdmIv40KV6rNKVn3u4DKx-_6f6eUw19Db3-1QDy_Sf_WFpI3PYL2iHRTY3shmdRr8sl6eLNxY94NrfoH0bwItCrKB8VsvpR2jgf2U.js?_nc_x=y7PXV7bUWY1, line 27: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iKAV4/y-/l/en_US/Y81bVfj1z8jaQCptPei6qeFWcYx9lUcEWyM8g_3198_S8mFDxSaNroCsmgshYgdhjRg1DYAwRAyTfdo7wk7o24AGl8k7y1c4OMbgzNAVZXKZcmFSZ0dIK8hMaZugzNPv8N1-iAzzfpvdHg9Mczon6kD96mXd3eYQQ20V68Fcd7zA50oNd_wZtmlw3DwBcdX2ThrYJWzs-QcapTHbcIYknI3fd4qM4m24Hx72KEdmIv40KV6rNKVn3u4DKx-_6f6eUw19Db3-1QDy_Sf_WFpI3PYL2iHRTY3shmdRr8sl6eLNxY94NrfoH0bwItCrKB8VsvpR2jgf2U.js?_nc_x=y7PXV7bUWY1, line 27: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iKAV4/y-/l/en_US/Y81bVfj1z8jaQCptPei6qeFWcYx9lUcEWyM8g_3198_S8mFDxSaNroCsmgshYgdhjRg1DYAwRAyTfdo7wk7o24AGl8k7y1c4OMbgzNAVZXKZcmFSZ0dIK8hMaZugzNPv8N1-iAzzfpvdHg9Mczon6kD96mXd3eYQQ20V68Fcd7zA50oNd_wZtmlw3DwBcdX2ThrYJWzs-QcapTHbcIYknI3fd4qM4m24Hx72KEdmIv40KV6rNKVn3u4DKx-_6f6eUw19Db3-1QDy_Sf_WFpI3PYL2iHRTY3shmdRr8sl6eLNxY94NrfoH0bwItCrKB8VsvpR2jgf2U.js?_nc_x=y7PXV7bUWY1, line 27: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iKAV4/y-/l/en_US/Y81bVfj1z8jaQCptPei6qeFWcYx9lUcEWyM8g_3198_S8mFDxSaNroCsmgshYgdhjRg1DYAwRAyTfdo7wk7o24AGl8k7y1c4OMbgzNAVZXKZcmFSZ0dIK8hMaZugzNPv8N1-iAzzfpvdHg9Mczon6kD96mXd3eYQQ20V68Fcd7zA50oNd_wZtmlw3DwBcdX2ThrYJWzs-QcapTHbcIYknI3fd4qM4m24Hx72KEdmIv40KV6rNKVn3u4DKx-_6f6eUw19Db3-1QDy_Sf_WFpI3PYL2iHRTY3shmdRr8sl6eLNxY94NrfoH0bwItCrKB8VsvpR2jgf2U.js?_nc_x=y7PXV7bUWY1, line 27: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iKAV4/y-/l/en_US/Y81bVfj1z8jaQCptPei6qeFWcYx9lUcEWyM8g_3198_S8mFDxSaNroCsmgshYgdhjRg1DYAwRAyTfdo7wk7o24AGl8k7y1c4OMbgzNAVZXKZcmFSZ0dIK8hMaZugzNPv8N1-iAzzfpvdHg9Mczon6kD96mXd3eYQQ20V68Fcd7zA50oNd_wZtmlw3DwBcdX2ThrYJWzs-QcapTHbcIYknI3fd4qM4m24Hx72KEdmIv40KV6rNKVn3u4DKx-_6f6eUw19Db3-1QDy_Sf_WFpI3PYL2iHRTY3shmdRr8sl6eLNxY94NrfoH0bwItCrKB8VsvpR2jgf2U.js?_nc_x=y7PXV7bUWY1, line 27: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iKAV4/y-/l/en_US/Y81bVfj1z8jaQCptPei6qeFWcYx9lUcEWyM8g_3198_S8mFDxSaNroCsmgshYgdhjRg1DYAwRAyTfdo7wk7o24AGl8k7y1c4OMbgzNAVZXKZcmFSZ0dIK8hMaZugzNPv8N1-iAzzfpvdHg9Mczon6kD96mXd3eYQQ20V68Fcd7zA50oNd_wZtmlw3DwBcdX2ThrYJWzs-QcapTHbcIYknI3fd4qM4m24Hx72KEdmIv40KV6rNKVn3u4DKx-_6f6eUw19Db3-1QDy_Sf_WFpI3PYL2iHRTY3shmdRr8sl6eLNxY94NrfoH0bwItCrKB8VsvpR2jgf2U.js?_nc_x=y7PXV7bUWY1, line 27: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iKAV4/y-/l/en_US/Y81bVfj1z8jaQCptPei6qeFWcYx9lUcEWyM8g_3198_S8mFDxSaNroCsmgshYgdhjRg1DYAwRAyTfdo7wk7o24AGl8k7y1c4OMbgzNAVZXKZcmFSZ0dIK8hMaZugzNPv8N1-iAzzfpvdHg9Mczon6kD96mXd3eYQQ20V68Fcd7zA50oNd_wZtmlw3DwBcdX2ThrYJWzs-QcapTHbcIYknI3fd4qM4m24Hx72KEdmIv40KV6rNKVn3u4DKx-_6f6eUw19Db3-1QDy_Sf_WFpI3PYL2iHRTY3shmdRr8sl6eLNxY94NrfoH0bwItCrKB8VsvpR2jgf2U.js?_nc_x=y7PXV7bUWY1, line 27: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i9nl4/yj/l/en_US/Y81bVfj1z8j.js?_nc_x=y7PXV7bUWY1, line 27: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i9nl4/yj/l/en_US/Y81bVfj1z8j.js?_nc_x=y7PXV7bUWY1, line 27: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i9nl4/yj/l/en_US/Y81bVfj1z8j.js?_nc_x=y7PXV7bUWY1, line 27: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i9nl4/yj/l/en_US/Y81bVfj1z8j.js?_nc_x=y7PXV7bUWY1, line 27: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iUwi4/y5/l/en_US/nA48yNWKMPti_MjLfDRwiwY81bVfj1z8jaQCptPei6qeFWcYx9lUcEW.js?_nc_x=y7PXV7bUWY1, line 188: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iUwi4/y5/l/en_US/nA48yNWKMPti_MjLfDRwiwY81bVfj1z8jaQCptPei6qeFWcYx9lUcEW.js?_nc_x=y7PXV7bUWY1, line 188: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iUwi4/y5/l/en_US/nA48yNWKMPti_MjLfDRwiwY81bVfj1z8jaQCptPei6qeFWcYx9lUcEW.js?_nc_x=y7PXV7bUWY1, line 188: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iUwi4/y5/l/en_US/nA48yNWKMPti_MjLfDRwiwY81bVfj1z8jaQCptPei6qeFWcYx9lUcEW.js?_nc_x=y7PXV7bUWY1, line 188: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iKAV4/y-/l/en_US/Y81bVfj1z8jaQCptPei6qeFWcYx9lUcEWyM8g_3198_S8mFDxSaNroCsmgshYgdhjRg1DYAwRAyTfdo7wk7o24AGl8k7y1c4OMbgzNAVZXKZcmFSZ0dIK8hMaZugzNPv8N1-iAzzfpvdHg9Mczon6kD96mXd3eYQQ20V68Fcd7zA50oNd_wZtmlw3DwBcdX2ThrYJWzs-QcapTHbcIYknI3fd4qM4m24Hx72KEdmIv40KV6rNKVn3u4DKx-_6f6eUw19Db3-1QDy_Sf_WFpI3PYL2iHRTY3shmdRr8sl6eLNxY94NrfoH0bwItCrKB8VsvpR2jgf2U.js?_nc_x=y7PXV7bUWY1, line 27: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iKAV4/y-/l/en_US/Y81bVfj1z8jaQCptPei6qeFWcYx9lUcEWyM8g_3198_S8mFDxSaNroCsmgshYgdhjRg1DYAwRAyTfdo7wk7o24AGl8k7y1c4OMbgzNAVZXKZcmFSZ0dIK8hMaZugzNPv8N1-iAzzfpvdHg9Mczon6kD96mXd3eYQQ20V68Fcd7zA50oNd_wZtmlw3DwBcdX2ThrYJWzs-QcapTHbcIYknI3fd4qM4m24Hx72KEdmIv40KV6rNKVn3u4DKx-_6f6eUw19Db3-1QDy_Sf_WFpI3PYL2iHRTY3shmdRr8sl6eLNxY94NrfoH0bwItCrKB8VsvpR2jgf2U.js?_nc_x=y7PXV7bUWY1, line 27: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iKAV4/y-/l/en_US/Y81bVfj1z8jaQCptPei6qeFWcYx9lUcEWyM8g_3198_S8mFDxSaNroCsmgshYgdhjRg1DYAwRAyTfdo7wk7o24AGl8k7y1c4OMbgzNAVZXKZcmFSZ0dIK8hMaZugzNPv8N1-iAzzfpvdHg9Mczon6kD96mXd3eYQQ20V68Fcd7zA50oNd_wZtmlw3DwBcdX2ThrYJWzs-QcapTHbcIYknI3fd4qM4m24Hx72KEdmIv40KV6rNKVn3u4DKx-_6f6eUw19Db3-1QDy_Sf_WFpI3PYL2iHRTY3shmdRr8sl6eLNxY94NrfoH0bwItCrKB8VsvpR2jgf2U.js?_nc_x=y7PXV7bUWY1, line 27: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iKAV4/y-/l/en_US/Y81bVfj1z8jaQCptPei6qeFWcYx9lUcEWyM8g_3198_S8mFDxSaNroCsmgshYgdhjRg1DYAwRAyTfdo7wk7o24AGl8k7y1c4OMbgzNAVZXKZcmFSZ0dIK8hMaZugzNPv8N1-iAzzfpvdHg9Mczon6kD96mXd3eYQQ20V68Fcd7zA50oNd_wZtmlw3DwBcdX2ThrYJWzs-QcapTHbcIYknI3fd4qM4m24Hx72KEdmIv40KV6rNKVn3u4DKx-_6f6eUw19Db3-1QDy_Sf_WFpI3PYL2iHRTY3shmdRr8sl6eLNxY94NrfoH0bwItCrKB8VsvpR2jgf2U.js?_nc_x=y7PXV7bUWY1, line 27: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iKAV4/y-/l/en_US/Y81bVfj1z8jaQCptPei6qeFWcYx9lUcEWyM8g_3198_S8mFDxSaNroCsmgshYgdhjRg1DYAwRAyTfdo7wk7o24AGl8k7y1c4OMbgzNAVZXKZcmFSZ0dIK8hMaZugzNPv8N1-iAzzfpvdHg9Mczon6kD96mXd3eYQQ20V68Fcd7zA50oNd_wZtmlw3DwBcdX2ThrYJWzs-QcapTHbcIYknI3fd4qM4m24Hx72KEdmIv40KV6rNKVn3u4DKx-_6f6eUw19Db3-1QDy_Sf_WFpI3PYL2iHRTY3shmdRr8sl6eLNxY94NrfoH0bwItCrKB8VsvpR2jgf2U.js?_nc_x=y7PXV7bUWY1, line 27: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iKAV4/y-/l/en_US/Y81bVfj1z8jaQCptPei6qeFWcYx9lUcEWyM8g_3198_S8mFDxSaNroCsmgshYgdhjRg1DYAwRAyTfdo7wk7o24AGl8k7y1c4OMbgzNAVZXKZcmFSZ0dIK8hMaZugzNPv8N1-iAzzfpvdHg9Mczon6kD96mXd3eYQQ20V68Fcd7zA50oNd_wZtmlw3DwBcdX2ThrYJWzs-QcapTHbcIYknI3fd4qM4m24Hx72KEdmIv40KV6rNKVn3u4DKx-_6f6eUw19Db3-1QDy_Sf_WFpI3PYL2iHRTY3shmdRr8sl6eLNxY94NrfoH0bwItCrKB8VsvpR2jgf2U.js?_nc_x=y7PXV7bUWY1, line 27: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iKAV4/y-/l/en_US/Y81bVfj1z8jaQCptPei6qeFWcYx9lUcEWyM8g_3198_S8mFDxSaNroCsmgshYgdhjRg1DYAwRAyTfdo7wk7o24AGl8k7y1c4OMbgzNAVZXKZcmFSZ0dIK8hMaZugzNPv8N1-iAzzfpvdHg9Mczon6kD96mXd3eYQQ20V68Fcd7zA50oNd_wZtmlw3DwBcdX2ThrYJWzs-QcapTHbcIYknI3fd4qM4m24Hx72KEdmIv40KV6rNKVn3u4DKx-_6f6eUw19Db3-1QDy_Sf_WFpI3PYL2iHRTY3shmdRr8sl6eLNxY94NrfoH0bwItCrKB8VsvpR2jgf2U.js?_nc_x=y7PXV7bUWY1, line 27: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3iKAV4/y-/l/en_US/Y81bVfj1z8jaQCptPei6qeFWcYx9lUcEWyM8g_3198_S8mFDxSaNroCsmgshYgdhjRg1DYAwRAyTfdo7wk7o24AGl8k7y1c4OMbgzNAVZXKZcmFSZ0dIK8hMaZugzNPv8N1-iAzzfpvdHg9Mczon6kD96mXd3eYQQ20V68Fcd7zA50oNd_wZtmlw3DwBcdX2ThrYJWzs-QcapTHbcIYknI3fd4qM4m24Hx72KEdmIv40KV6rNKVn3u4DKx-_6f6eUw19Db3-1QDy_Sf_WFpI3PYL2iHRTY3shmdRr8sl6eLNxY94NrfoH0bwItCrKB8VsvpR2jgf2U.js?_nc_x=y7PXV7bUWY1, line 27: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39013A,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 8844, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1599645916284	Marionette	INFO	Stopped listening on port 59908
+1599646283139	geckodriver	INFO	Listening on 127.0.0.1:61000
+1599646286168	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hamza\\AppData\\Local\\Temp\\rust_mozprofilebcMOSG"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599646302890	Marionette	INFO	Listening on port 61009
+1599646302953	Marionette	WARN	TLS certificate errors will be ignored for this session
+1599646787947	Marionette	INFO	Stopped listening on port 61009
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 1184, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 545
+1599646788623	geckodriver	INFO	Listening on 127.0.0.1:61511
+1599646791458	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hamza\\AppData\\Local\\Temp\\rust_mozprofile1mt8yj"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599646798877	Marionette	INFO	Listening on port 61520
+1599646799307	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1599647514506	Marionette	INFO	Stopped listening on port 61520
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1599647522668	geckodriver	INFO	Listening on 127.0.0.1:62169
+1599647525696	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hamza\\AppData\\Local\\Temp\\rust_mozprofileiSV3o3"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599647534352	Marionette	INFO	Listening on port 62179
+1599647534657	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 4908, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 545
+1599648058748	Marionette	INFO	Stopped listening on port 62179
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1599648134065	geckodriver	INFO	Listening on 127.0.0.1:62702
+1599648137182	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hamza\\AppData\\Local\\Temp\\rust_mozprofile4iYSxe"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599648143708	Marionette	INFO	Listening on port 62711
+1599648144043	Marionette	WARN	TLS certificate errors will be ignored for this session
+1599648264742	Marionette	INFO	Stopped listening on port 62711
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1599648288430	geckodriver	INFO	Listening on 127.0.0.1:62870
+1599648291699	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hamza\\AppData\\Local\\Temp\\rust_mozprofile6El6zW"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599648298409	Marionette	INFO	Listening on port 62879
+1599648298668	Marionette	WARN	TLS certificate errors will be ignored for this session
+1599648492979	Marionette	INFO	Stopped listening on port 62879
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hamza\\AppData\\Local\\Temp\\rust_mozprofileblKfCl"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599648428197	Marionette	INFO	Listening on port 63044
+1599648428563	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Parent 10084, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1599649723574	Marionette	INFO	Stopped listening on port 63044
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1599649748304	geckodriver	INFO	Listening on 127.0.0.1:63582
+1599649751403	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hamza\\AppData\\Local\\Temp\\rust_mozprofileglpg1i"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599649762321	Marionette	INFO	Listening on port 63591
+1599649762461	Marionette	WARN	TLS certificate errors will be ignored for this session
+1599650259987	Marionette	INFO	Stopped listening on port 63591
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1599650276789	geckodriver	INFO	Listening on 127.0.0.1:63871
+1599650280012	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hamza\\AppData\\Local\\Temp\\rust_mozprofileGM5wwl"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599650286941	Marionette	INFO	Listening on port 63879
+1599650287367	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 2324, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+[Parent 2324, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 545
+1599653976739	Marionette	INFO	Stopped listening on port 63879
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1599654039391	geckodriver	INFO	Listening on 127.0.0.1:49818
+1599654042606	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hamza\\AppData\\Local\\Temp\\rust_mozprofileqkqCFb"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599654053895	Marionette	INFO	Listening on port 49827
+1599654054187	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Parent 5648, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1599654571861	Marionette	INFO	Stopped listening on port 49827
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 5648, Gecko_IOThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 545
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1599654580754	geckodriver	INFO	Listening on 127.0.0.1:50334
+1599654583730	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hamza\\AppData\\Local\\Temp\\rust_mozprofilePuVHuQ"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599654591978	Marionette	INFO	Listening on port 50343
+1599654592079	Marionette	WARN	TLS certificate errors will be ignored for this session
+1599656594322	Marionette	INFO	Stopped listening on port 50343
+1599656601975	geckodriver	INFO	Listening on 127.0.0.1:51978
+1599656605634	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hamza\\AppData\\Local\\Temp\\rust_mozprofileUFAhsB"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599656630391	Marionette	INFO	Listening on port 51991
+1599656630693	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1599656963225	Marionette	INFO	Stopped listening on port 51991
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1599657030598	geckodriver	INFO	Listening on 127.0.0.1:52443
+1599657033905	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hamza\\AppData\\Local\\Temp\\rust_mozprofileMzyyv1"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599657039311	Marionette	INFO	Listening on port 52453
+1599657039783	Marionette	WARN	TLS certificate errors will be ignored for this session
+1599657429777	Marionette	INFO	Stopped listening on port 52453
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1599657430461	geckodriver	INFO	Listening on 127.0.0.1:52831
+1599657433575	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hamza\\AppData\\Local\\Temp\\rust_mozprofileiIsRi2"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599657439367	Marionette	INFO	Listening on port 52841
+1599657439414	Marionette	WARN	TLS certificate errors will be ignored for this session
+1599658194812	Marionette	INFO	Stopped listening on port 52841
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1599658256201	geckodriver	INFO	Listening on 127.0.0.1:53479
+1599658259298	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hamza\\AppData\\Local\\Temp\\rust_mozprofileVNE4MY"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599658266204	Marionette	INFO	Listening on port 53490
+1599658266282	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 7100, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1599658499902	Marionette	INFO	Stopped listening on port 53490
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1599660263378	geckodriver	INFO	Listening on 127.0.0.1:50026
+1599660266502	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hamza\\AppData\\Local\\Temp\\rust_mozprofileVcalYi"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599660287825	Marionette	INFO	Listening on port 50034
+1599660288087	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Child 1640, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 545
+
+###!!! [Child][RunMessage] Error: Channel closing: too late tJavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i4Jo4/ye/l/fr_FR/phdcGQgna9Y.js?_nc_x=Ij3Wp8lg5Kz, line 19: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3i4Jo4/ye/l/fr_FR/phdcGQgna9Y.js?_nc_x=Ij3Wp8lg5Kz, line 19: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode 
