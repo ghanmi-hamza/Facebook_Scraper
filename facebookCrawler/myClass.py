@@ -48,11 +48,9 @@ class FacebookDriver(Driver):
         self.driver.get("https://www.facebook.com/"+str(user_id))
         time.sleep(3)
         try:
-            intro=self.driver.find_element_by_xpath(".//div[contains(@class, 'rq0escxv l9j0dhe7 du4w35lb j83agx80 cbu4d94t g5gj957u d2edcug0 hpfvmrgz rj1gh0hx buofh1pr p8fzw8mz')]").text
+            intro=self.driver.find_element_by_xpath(".//div[@class= 'rq0escxv l9j0dhe7 du4w35lb j83agx80 cbu4d94t g5gj957u d2edcug0 hpfvmrgz rj1gh0hx buofh1pr p8fzw8mz pcp91wgn iuny7tx3 ipjc6fyt']").text
         except:
             intro=''
-        #popup = WebDriverWait(driver, 10). until(EC.presence_of_element_located((By.CSS_SELECTOR, 'html')))
-        #driver.execute_script('arguments[0].scrollTop = arguments[0].scrollHeight', popup)
         time.sleep(3)
 
         try:
@@ -65,44 +63,43 @@ class FacebookDriver(Driver):
             self.image=img.get_attribute('src')
         except Exception:
             self.image='No profile image'
-        
-        #basic_info=self.get_basic_info(driver,url)
-        #self.gender=basic_info[1]
-        #self.birthday=basic_info[0]
-        #n=30
-        #self.images_urls=self.get_images(driver,url,n)
         dic={
         'name':self.name,
         'Intro':intro,
         'friends':self.friends
         }
         return(dic)
+    
     def get_publications(self,user_id,comments,n):
         """ function that return info about the first n posts """
         self.driver.get("https://www.facebook.com/"+str(user_id))
         post={}
-        time.sleep(2)
+        time.sleep(4)
         try:
-            self.driver.execute_script("arguments[0].scrollIntoView();",self.driver.find_element_by_xpath(".//div[@class='du4w35lb k4urcfbm l9j0dhe7 sjgh65i0']"))
+            self.driver.execute_script("arguments[0].scrollIntoView();",self.driver.find_elements_by_xpath(".//div[@class='du4w35lb k4urcfbm l9j0dhe7 sjgh65i0']")[0])
         except:
             pass
         self.posts={}
         for i in range(n):
             try:
-                c=self.driver.find_elements_by_xpath(".//div[@class='du4w35lb k4urcfbm l9j0dhe7 sjgh65i0']")
+                c=self.driver.find_elements_by_xpath(".//div[@class='rq0escxv l9j0dhe7 du4w35lb hybvsw6c ue3kfks5 pw54ja7n uo3d90p7 l82x9zwi ni8dbmo4 stjgntxs k4urcfbm sbcfpzgs']")
+                #c=self.driver.find_elements_by_xpath(".//div[@class='du4w35lb k4urcfbm l9j0dhe7 sjgh65i0']")
                 a=self.post_details(c[i])
                 if comments=="T":
                     b=self.get_comments(c[i])
                 else:
                     b=''
-                a['commentaire']=b
+                #a['commentaire']=b
                 dic={
-                'post'+str(i+1):a
+                'post'+str(i+1):a,
+                'comments':b
                 }
                 self.posts.update(dic)
                 print(i+1)
             except:
                 break
+        return(self.posts)
+    
 
     def get_images(self,user_id,n):
         """return the n first images urls"""
@@ -134,19 +131,20 @@ class FacebookDriver(Driver):
         except:    
             Gender=''
         return(BirthDay,Gender)
-    def post_details(publication_id):
+    def post_details(self,publication_id):
         """get details from a post"""
         try:
             self.driver.execute_script("arguments[0].scrollIntoView();",publication_id)
+            
         except:
             pass
         time.sleep(1)
-        try:
+        """try:
             bouton = self.driver.find_element_by_xpath(".//*[@class='see_more_link']")
             self.driver.execute_script("arguments[0].click();", bouton)
         except Exception:
             popup = WebDriverWait(self.driver, 10). until(EC.presence_of_element_located((By.CSS_SELECTOR, 'html')))
-            self.driver.execute_script('arguments[0].scrollTop = arguments[0].scrollHeight', popup)
+            self.driver.execute_script('arguments[0].scrollTop = arguments[0].scrollHeight', popup)"""
         try:
             nb_reaction=publication_id.find_element_by_xpath(".//span[@class='gpro0wi8 cwj9ozl2 bzsjyuwj ja2t1vim']").text
         except Exception:
@@ -155,7 +153,6 @@ class FacebookDriver(Driver):
             nb_comment=publication_id.find_element_by_xpath(".//span[@class='oi732d6d ik7dh3pa d2edcug0 hpfvmrgz qv66sw1b c1et5uql a8c37x1j muag1w35 enqfppq2 jq4qci2q a3bd9o3v knj5qynh m9osqain']").text
         except:
             nb_comment=0
-        q=data
         user=publication_id.find_element_by_xpath(".//a[@class='oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl oo9gr5id gpro0wi8 lrazzd5p']").text
         date=publication_id.find_element_by_xpath(".//*[@class='oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl gmql0nx0 gpro0wi8 b1v8xokw']").get_attribute("aria-label")
         try:
@@ -180,7 +177,6 @@ class FacebookDriver(Driver):
     def get_comments(self,post_id):
         """get comments details from a post"""
         comments=[]
-        time.sleep(1)
         try:
             see_more_comments = post_id.find_elements_by_xpath(".//div[@class='oajrlxb2 bp9cbjyn g5ia77u1 mtkw9kbi tlpljxtp qensuy8j ppp5ayq2 goun2846 ccm00jje s44p3ltw mk2mc5f4 rt8b4zig n8ej3o3l agehan2d sk4xxmp2 rq0escxv nhd2j8a9 pq6dq46d mg4g778l btwxx1t3 g5gj957u p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x tgvbjcpo hpfvmrgz jb3vyjys p8fzw8mz qt6c0cv9 a8nywdso l9j0dhe7 i1ao9s8h esuyzwwr f1sip0of du4w35lb lzcic4wl abiwlrkh gpro0wi8 m9osqain buofh1pr']")
             for link in see_more_comments:
@@ -190,19 +186,52 @@ class FacebookDriver(Driver):
                     pass
         except Exception:
             pass
-        data = post_id.find_elements_by_xpath(".//div[@class='stjgntxs ni8dbmo4 g3eujd1d']")
+        data = post_id.find_elements_by_xpath(".//div[@class='l9j0dhe7 ecm0bbzt hv4rvrfc qt6c0cv9 dati1w0a lzcic4wl btwxx1t3 j83agx80']")
+        print(len(data))
+        time.sleep(1)
         for d in data:
             try:
                 author = d.find_element_by_xpath(".//div[@class='nc684nl6']").text
-                try:
-                    text = d.find_element_by_xpath(".//div[@class='ecm0bbzt e5nlhep0 a8c37x1j']").text
-                except:
-                    text=""
-                date=d.find_element_by_xpath(".//*[@class='oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl m9osqain gpro0wi8 knj5qynh']").text
-                comments.append([author, text, date])
-            except Exception:
-                pass
+                print(author)
+            except:
+                author=''
+            try:
+                text = d.find_element_by_xpath(".//div[@class='ecm0bbzt e5nlhep0 a8c37x1j']").text
+            except:
+                text=""
+            date=d.find_element_by_xpath(".//*[@class='oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl m9osqain gpro0wi8 knj5qynh']").text
+            comments.append([author, text, date])
         return(comments)
+    def get_comment_by_key(self,key,n):
+        self.driver.get("https://www.facebook.com/search/posts/?q="+str(key))
+        time.sleep(3)
+        try:
+            self.driver.find_element_by_xpath('//div[@class="hpfvmrgz g5gj957u buofh1pr rj1gh0hx o8rfisnq"]/a/span').click()
+        except:
+            pass
+        time.sleep(4)
+        li=[]
+        for i in range(n):
+            #print(i+1)
+            c=self.driver.find_elements_by_xpath(".//div[@class='sjgh65i0']")
+            try:
+                self.driver.execute_script("arguments[0].scrollIntoView();",c[i])
+            except:
+                popup = WebDriverWait(self.driver, 10). until(EC.presence_of_element_located((By.CSS_SELECTOR, 'html')))
+                self.driver.execute_script('arguments[0].scrollTop = arguments[0].scrollHeight', popup)
+                time.sleep(1)
+            try:
+                name=c[i].find_element_by_xpath(".//div[@class='qzhwtbm6 knvmm38d']").text
+                content = c[i].find_element_by_xpath(".//a[@class='oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 a8c37x1j p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl gmql0nx0 p8dawk7l']").text
+                date=c[i].find_element_by_xpath(".//span[@class='oi732d6d ik7dh3pa d2edcug0 hpfvmrgz qv66sw1b c1et5uql jq4qci2q a3bd9o3v knj5qynh m9osqain']").text
+                dic={"name":name,"date":date,"content":content}          
+                
+                li.append(dic)
+            except:
+                pass
+        return(li)
+        
+        
 
 
             
