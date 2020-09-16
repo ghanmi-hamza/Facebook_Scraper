@@ -4,8 +4,8 @@ from myClass import *
 @click.option('--url', default='', help='url of the user')
 @click.option('--n', default=1, help='number of posts')
 @click.option('--s', default=False, help='Download data')
-@click.option('--usr', default="hamza.ghanmi56@gmail.com", help="your Facebook login")
-@click.option('--pwd', default="ahlem0", help='password')
+@click.option('--usr', default="", help="your Facebook login")
+@click.option('--pwd', default="", help='password')
 
 def main(url,n,s,usr,pwd):
     driver=get_browser(url,usr,pwd)
