@@ -15,8 +15,15 @@ class Driver(ABC):
         pass
     def get_comment_by_keys(self,keys,n):
         pass
-    def get_comments(self,post_id):
+    def get_friends(self,user_id,nb_friends):
         pass
+    def get_events(self,user_id,scroll,n):
+        pass
+    def get_likes(self,user_id,scroll,n):
+        pass
+    def get_page(self,page_id,n,comments):
+        pass
+    
 class FacebookDriver(Driver):
     def __init__(self,name=''):
         self.name=name
