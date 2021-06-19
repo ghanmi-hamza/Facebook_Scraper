@@ -42,7 +42,7 @@ $ python __main.py__ --url= --n= --pubs= --nb_images= --download=
 ### Example : 
 
 ```
-$ python __main.py__ --url="https://www.gamespot.com/profile/airdoggo/" --pubs="False" --nb_images=10 --download="True"
+$ python __main.py__ --url="https://www.facebook.com/profile/airdoggo/" --pubs="False" --nb_images=10 --download="True"
 ```
 <hr>
 
