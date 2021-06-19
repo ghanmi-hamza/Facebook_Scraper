@@ -12,7 +12,7 @@
 ## Installation
 Install from source
 ```
-$ git clone https://github.com/ghanmi-hamza/Game_Spot_Crawler.git
+$ git clone https://github.com/ghanmi-hamza/Facebook_Scraper.git
 $ python setup.py install
 ```
 GameSpot Crawler requires Webdriver to run. So Please make sure that Firefox is installed + geckodriver :
