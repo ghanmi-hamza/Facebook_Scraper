@@ -15,7 +15,7 @@ Install from source
 $ git clone https://github.com/ghanmi-hamza/Facebook_Scraper.git
 $ python setup.py install
 ```
-GameSpot Crawler requires Webdriver to run. So Please make sure that Firefox is installed + geckodriver :
+Facebook Crawler requires Webdriver to run. So Please make sure that Firefox is installed + geckodriver :
 - 1) Download  geckodriver from this link [geckodriver](https://github.com/mozilla/geckodriver/releases) and extract it.
 - 2) Place the path of geckodriver.exe in `myclass.py` in the `executable_path` variable.
   
