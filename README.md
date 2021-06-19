@@ -1,4 +1,4 @@
-# GameSpot Crawler
+# Facebook Crawler
 <br>
 <p align="center">
   <img src="https://www.bestproxyreviews.com/wp-content/uploads/2020/05/Facebook-Scrapers.jpg" width="500" title="hover text">
