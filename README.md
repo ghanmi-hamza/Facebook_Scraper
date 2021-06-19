@@ -67,7 +67,7 @@ $ python __main.py__ --url="https://www.facebook.com/profile/airdoggo/" --pubs="
 - If there is any bug in the code or if you want any improvement don't hesitate to contact me.
 <hr>
 
-## Please Check the test Folder to see the some examples...
+## Please Check the test Folder to see the some examples and don't forget to put your facebook id and password as (usr, pwd)...
 
 
 <h2 align="left">🌐 Connect</h2>
